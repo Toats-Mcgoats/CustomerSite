@@ -4,19 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Custom Site</title>
+    <link rel="stylesheet" href="/stylesheet/main.css">
+    <link rel="stylesheet" href="/stylesheet/mobile-menu.css">
+    <link rel="stylesheet" href="/stylesheet/footer.css">
 </head>
 <body>
-    <section id="contact-bar">
-        <div>Contact Us Now!</div>
+    <section id="contact-bar" class="afixed-top">
         <div>
-            <a href="tel:+12522020447">252.999.9999</a>
-        </div>
-        <div>
-            <button class="btn">Commerical</button>
+            <h2>Contact Us Now!</h2>
+            <div>
+                <a href="tel:+12522020447">252.999.9999</a>
+            </div>
+            <div>
+                <button class="btn">Commerical</button>
+            </div>
         </div>
     </section>
    <!-- Start Navbar -->
     <header class="fixed">
+
         <div id="mobile-header">
             <div id="hamburger-icon" class="hamburger" onclick="openNav()">
                 <div class="icon-bars" >
@@ -38,7 +44,7 @@
                     <li><a href="#" id="" onclick="closeNav()">Moisture</a></li>
                     <li><a href="#" id="" onclick="closeNav()">Pest Rescearch</a></li>
                 </ul> 
-                <div><img src="" alt="login"></div>           
+                <div><i>login</i></div>           
             </div>    
         </nav>
     </header>
@@ -199,6 +205,7 @@
             </ul>
         </div>
     </footer>
+    <script src="//code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="/fucntions/main.js"></script>
 </body>
-
 </html>
