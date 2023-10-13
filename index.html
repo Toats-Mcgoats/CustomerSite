@@ -7,70 +7,118 @@
     <script src="https://kit.fontawesome.com/5356a38e49.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="/stylesheet/main.css">
-    <!--<link rel="stylesheet" href="/stylesheet/mobile-menu.css">
-    <link rel="stylesheet" href="/stylesheet/footer.css"> -->
+    <link rel="stylesheet" href="/stylesheet/mobile-menu.css">
+    <link rel="stylesheet" href="/stylesheet/footer.css">
+    <!--<link rel="stylesheet" href="/stylesheet/debug.css"> -->
 
 </head>
 <body>
-    <!-- Start Navbar -->
-    <header class="fixed">
-        
-        <div id="mobile-header">
-            <div id="hamburger-icon" class="hamburger" onclick="openNav()">
-                <div class="icon-bars" >
-                    <div class="one"></div>
-                    <div class="two"></div>
-                    <div class="three"></div>
-                </div>
+    <section class="has-background-link-dark my-2">
+        <div class="columns is-mobile is-vcentered">
+            <div class="column has-text-right is-size-5">
+                <h2 class="has-text-white-ter">Contact Us Now!</h2>
             </div>
-        </div>
-        
-        <nav id="mainMenu" class="overlay">
-            
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            
-            <div class="overlay-content">
-                <ul class="nav-menu">
-                    <li><a href="#" id="" onclick="closeNav()">Termite</a></li>
-                    <li><a href="#" id="" onclick="closeNav()">Pest</a></li>
-                    <li><a href="#" id="" onclick="closeNav()">Moisture</a></li>
-                    <li><a href="#" id="" onclick="closeNav()">Pest Rescearch</a></li>
-                </ul> 
-                <div><i>login</i></div>           
-            </div>    
-        </nav>
-    </header>
-    <!-- End Navbar -->
-    <section class="has-background-link-dark has-text-white-ter">
-        <div class="columns is-mobile is-centered">
-            <h2 class="has-text-right column is-3 is-size-5">Contact Us Now!</h2>
-            <div class="has-text-centered column is-2">
-                <a class="has-text-danger is-size-5" href="tel:+12522020447">252.999.9999</a>
+            <div class="column is-one-fifth is-size-5">
+                <a href="tel:+12529999999" class="has-text-danger">(252)999.9999</a>
             </div>
-            <div class="column is-4 has-text-right is-offset-1">
-                <button class="button is-small">Commerical</button>
+            <div class="column has-text-centered is-offset-one-fifth is-one-quarter">
+                <button class="button is-small is-rounded btn"><a href="#" class="has-text-white-ter">Commerical</a></button>
             </div>
         </div>
     </section>
+    <!-- Start Navbar -->
+    <header class="fixed">
+        <nav class="navbar has-background-danger-light has-shadow" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="https://bulma.io">
+                    <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+                </a>
+            </div>
+            <div id="mobile-header">
+                <div id="hamburger-icon" class="hamburger" onclick="openNav()">
+                    <div class="icon-bars" >
+                        <div class="one"></div>
+                        <div class="two"></div>
+                        <div class="three"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="mainMenu" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <ul class="navbar-start nav-menu">
+                        <li><a href="#termite" id="" class="navbar-item" onclick="closeNav()">Termite Control</a></li>
+                        <li><a href="#pest" id="" class="navbar-item" onclick="closeNav()">Pest Solutions</a></li>
+                        <li><a href="#moisture" id="" class="navbar-item" onclick="closeNav()">Moisture Services</a></li>
+                        <li><a href="#research" id="" class="navbar-item" onclick="closeNav()" >Pest Research</a></li> 
+                        <div class="navbar-end">
+                            <li><a href="#login" class="navbar-item "><i class="fa-regular fa-user" style="color: #ff4013;"></i></a></li>
+                        </div>       
+                    </ul>            
+                </div>    
+            </div>
+        </nav>
+    </header>
+    <!-- End Navbar -->
     <main>
-        <section>
-            <div>
-                <p>Protecting what matters most.</p>
-                <ul class="buttons are-medium">
-                    <li><button class="button"><a href="#">Pest</a><i></i></button></li>
-                    <li><button class="button"><a href="#">Rodent</a><i></i></button></li>
-                    <li><button class="button"><a href="#">Termite</a><i></i></button></li>
-                    <li><button class="button"><a href="#">Wildlife</a><i></i></button></li>
-                </ul>
+        <section class="section hero is-fullheight">
+            <div class="hero-body columns">
+                <div class="box column">
+                    <h2>Protecting what matters most.</h2>
+                    <ul class="buttons columns is-mobile are-small">
+                        <li>
+                            <button class="button column is-rounded">
+                                <a href="#">
+                                    <span class="icon">
+                                        <i class="fa-regular fa-bug"></i>
+                                    </span>
+                                    <span>Pest</span>
+                                </a>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="button column is-rounded">
+                                <a href="#">
+                                    <span class="icon">
+                                        <i class="fa-regular fa-bug"></i>
+                                    </span>
+                                    <span>Rodent</span>
+                                </a>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="button column is-rounded">
+                                <a href="#">
+                                    <span>
+                                        <i class="fa-regular fa-bug"></i>
+                                    </span>
+                                    <span>Termite</span>    
+                                </a>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="button column is-rounded">
+                                <a href="#">
+                                    <span>
+                                        <i class="fa-regular fa-bug"></i>
+                                    </span>
+                                    <span>Wildlife</span>
+                                </a>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <p><a href="#services">More services <i>fa-chevon-dwn</i></a></p>
-            <div>
-                <button>
-                    <a href="#">Contact Now</a>
-                </button>
+            <div class="hero-foot">
+                <h4><a href="#services">More services <i class="fa-solid fa-chevron-down"></i></a></h4>
+                <div>
+                    <button>
+                        <a href="#">Contact Now</a>
+                    </button>
             </div>
-        </section>
-        <section>
+            </div>
+       <!-- </section>
+        <section class="section">
             <span>Who is Blank Pest Solutions</span>
             <ul>
                 <li><p>Local</p><i></i><p>Lorem ipsum</p></li>
@@ -79,7 +127,7 @@
                 <li><p>Always Here</p><i></i>Lorem ipsum</li>
             </ul>
         </section>
-        <section><p>Sign up and save when you Bundle (plus receive a free guide)</p><button>Sign Up</button></section>
+        <section class="section"><p>Sign up and save when you Bundle (plus receive a free guide)</p><button>Sign Up</button></section>
         <section>
             <div>
                 <img src="" alt="tech applying chemicals">
@@ -118,7 +166,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="section">
             <span>
                 <p>Not sure what's bugging you?</p>
                 <button><a href="#chatContact">Let's Chat</a></button>
@@ -207,7 +255,7 @@
                 <li>Terms of Use</li>
             </ul>
         </div>
-    </footer>
+    </footer> -->
     <script src="//code.jquery.com/jquery-3.2.1.js"></script>
     <script src="/fucntions/main.js"></script>
 </body>
